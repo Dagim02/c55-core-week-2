@@ -2,7 +2,7 @@ import promptSync from 'prompt-sync';
 const prompt = promptSync();
 
 // Step 1: prompt the user to enter a year
-let input = prompt("");
+let input = prompt("Enter the year: ");
 
 // Step 2: convert the user input to a number so we can perform calculations
 let year = Number(input);
