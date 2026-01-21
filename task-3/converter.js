@@ -12,6 +12,7 @@ console.log("3: Display the current exchange rate");
 const menuSelection = prompt("Select your option [1, 2, or 3]:");
 if (menuSelection === "1") {
   // EUR to USD
+  console.log("");
   const eurAmountInput = prompt("Enter amount in EUR:");
   const eurAmountNum = Number(eurAmountInput);
   // BUG 3 FIXED: Condition was wrong (eurAmountNum > 0)
@@ -23,6 +24,7 @@ if (menuSelection === "1") {
   }
 } else if (menuSelection === "2") {
   // USD to EUR
+  console.log("");
   const usdAmountInput = prompt("Enter amount in USD:");
   const usdAmountNum = Number(usdAmountInput);
   if (Number.isNaN(usdAmountNum) || usdAmountNum < 0) {
@@ -35,6 +37,7 @@ if (menuSelection === "1") {
   }
 } else if (menuSelection === "3") {
     // FEATURE added to Show exchange rate
+    console.log("");
     console.log(`The current exchange rate is 1 EUR = ${EUR_USD_RATE} USD.`);
 } else {
     console.log("Invalid selection. Please choose either 1, 2, or 3.");
