@@ -1,6 +1,8 @@
 // Do not change the line below
 import { errorMessage, successMessage } from './app.js';
+
 let incorrectAttempts = 0;
+
 function onLogin(username, password) {
   // If login is already blocked
 if (incorrectAttempts >= 4) {
@@ -22,5 +24,6 @@ if (incorrectAttempts >= 4) {
     }
   }
 }
+
 // Do not change the line below
 export { onLogin };
